@@ -1,22 +1,22 @@
 /*
-    Accept Character from user and check whether it is alphabet or not.
-    (A_Z a-z)
+    Accept Character from user and check whether it is Capital or not.
+    (A-Z )
 
     Input :  F
 
     Output: TRUE
 
-    Input :  &
+    Input :  d
 
     Output: FALSE
 
 */
 import java.util.*;
-class program44
+class program45
 {
     public static boolean Alphabet(char str)
     {
-        if((str >='A') && (str <='Z') || (str >='a') && (str <='z'))
+        if((str >='A') && (str <='Z'))
         {
             return true;
         }
@@ -34,11 +34,11 @@ class program44
 
         if(bRet == true)
         {
-            System.out.println("It is a Alphabet");
+            System.out.println("It is a Capital");
         }
         else
         {
-            System.out.println("It is not a Alphabet");
+            System.out.println("It is not Capital");
         }
     }
 }
