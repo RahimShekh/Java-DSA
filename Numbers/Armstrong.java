@@ -17,6 +17,7 @@ class Armstrong
             iSum = iSum + iDigit*iDigit*iDigit;
             iNo = iNo/10;
         }
+
         if(iSum == iNo2)
         {
             System.out.println("Number is Armstorng");

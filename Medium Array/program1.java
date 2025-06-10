@@ -8,4 +8,3 @@ Q. Find the unique element form the given array.
     2 => 2
     5 => 1
 */
-

@@ -22,7 +22,8 @@ class program10
             {
                 start = 0;
             }
-           for(int j = 1; j <= i; j++)
+
+           for(int j = 1; j < i; j++)
            {
                 System.out.print(start);
                 start = 1-start;

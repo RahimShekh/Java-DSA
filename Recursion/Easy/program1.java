@@ -1,5 +1,5 @@
-/*
-    Write a recursive program which display below pattern.
+
+/*  Write a recursive program which display below pattern.
 
     Output :   5    4   3   2   1   
 

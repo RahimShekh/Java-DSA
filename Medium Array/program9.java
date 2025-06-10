@@ -23,6 +23,7 @@ class program9
         }
       
        return i+1;  // returning the index
+       return i+1;
     }
     public static void main(String arg[])
     {

@@ -9,6 +9,9 @@ Two ways to solve this problem using brute force way and by sorting
 time comeplexity:  nlogn
 
 // brute force better for this question not sorting
+
+Two ways to solve this problem using brute force way by sorting
+time comeplexity:  nlogn
 */
 import java.util.*;
 
