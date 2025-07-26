@@ -5,6 +5,7 @@
      *******
     *********
  */
+
 import java.util.*;
 
 class program6

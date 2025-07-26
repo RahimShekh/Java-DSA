@@ -5,7 +5,6 @@ output: 34
 
 Better Approach
 */
-
 import java.util.*;
 
 class program5

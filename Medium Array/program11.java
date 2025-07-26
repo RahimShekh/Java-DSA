@@ -5,7 +5,7 @@
     output -  Arr = [4,5,6,7,1,2,3]
 
     //Brute Force
- */
+*/
 import java.util.*;
 
 class program11

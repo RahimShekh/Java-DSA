@@ -2,51 +2,48 @@
 Check if Array is Sorted or not    Arr[] = [2,4,5,7,8]     Sorted
                                    Arr[] = [4,2,34,1,4]    Not sorted
 optimal
- */
+*/
+
 import java.util.*;
 
 class program8
 {
-    public static boolean Sorted(int Arr[], int n)
+    public static void Logic(int Brr[],int n)
     {
+        boolean bFlag = true;
 
-       for(int i = 1; i < n; i++)
-       {
-            if(Arr[i] >= Arr[i-1])
+        for(int i=1; i < n; i++)
+        {
+            if(Brr[i] < Brr[i-1])
             {
-                return true;
+                bFlag = false;
+                break;
             }
-            else
-            {
-                return false;
-            }
-       }
-       
+        }
+
+        if(bFlag == true)
+        {
+            System.out.println("Array is Sorted");
+        }
+        else
+        {
+            System.out.println("Array is not Sorted");
+        }
     }
     public static void main(String arg[])
     {
         Scanner sobj = new Scanner(System.in);
 
-        System.out.println("Enter the Elements:");
-        int No = sobj.nextInt();
+        System.out.println("Enter the size of Array:");
+        int iSize = sobj.nextInt();
 
-        int Brr[] = new int[No];
+        int Arr[] = new int[iSize];
 
-        for(int i=0; i< No; i++)
+        for(int i=0; i < iSize; i++)
         {
-            Brr[i] = sobj.nextInt();
+            Arr[i] = sobj.nextInt();
         }
 
-        boolean bFlag = Sorted(Brr,No);
-
-         if(bFlag == true)
-        {
-            System.out.print("The Array is  Sorted");
-        }
-       else
-        {
-            System.out.print("The Array is not Sorted");
-        }
-       
+        Logic(Arr,iSize);
     }
 }

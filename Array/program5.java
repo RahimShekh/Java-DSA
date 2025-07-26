@@ -15,13 +15,14 @@ class program5
 {
     public static void SortedArray(int Arr[],int iSize)
     {
-        boolean bFlag = false;
+        boolean bFlag = true;
 
         for(int i = 1; i < Arr.length; i++)
         {
             if(Arr[i] >= Arr[i-1])
             {
-                bFlag = true;
+                bFlag = false;
+                break;
             }
         }
 

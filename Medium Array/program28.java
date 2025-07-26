@@ -1,5 +1,6 @@
 
 //Two sum problem
+//brute force
 
 import java.util.*;
 

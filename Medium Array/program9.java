@@ -9,21 +9,20 @@ import java.util.*;
 
 class program9
 {
-    public static int Duplicate(int Arr[], int n)
+    public static void Duplicate(int Arr[], int n)
     {
-        int i = 0;
+        int j = 0;
 
-        for(int j = 1; j < n; j++)
+        System.out.print(Arr[j]+" ");
+        for(int i = 1; i < n; i++)
         {
-            if(Arr[i] != Arr[j])
+            if(Arr[i] != Arr[i-1])
             {
-                Arr[i+1] = Arr[j];
-                i++;
+                j++;
+                Arr[j] = Arr[i];
+                System.out.print(Arr[j]+" ");
             }
         }
-      
-       return i+1;  // returning the index
-       return i+1;
     }
     public static void main(String arg[])
     {
@@ -39,11 +38,6 @@ class program9
             Brr[i] = sobj.nextInt();
         }
 
-        int newLength = Duplicate(Brr,No);
-
-        for(int i=0; i< newLength; i++)
-        {
-            System.out.print(Brr[i]+" ");
-        }
+        Duplicate(Brr,No);
     }
 }

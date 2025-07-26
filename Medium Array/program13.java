@@ -8,18 +8,18 @@ import java.util.*;
 
 class program13
 {
-    public static void rightRotate(int Brr[], int Size,int k)
+    public static void rightRotate(int Brr[], int n,int k)
     {
-        k = k % Size;
+        k = k % n;
 
         int temp[] = new int[k];
 
-        for(int i = Size-k,j = 0; i < Size; i++, j++)
+        for(int i = n-k,j = 0; i < n; i++, j++)
         {
             temp[j] = Brr[i];
         }
 
-        for(int i = Size-1; i >=k; i--)  // shifting elments from last index
+        for(int i = n-1; i >=k; i--)  // shifting elments from last index
         {
             Brr[i] = Brr[i-k];
         }
@@ -29,7 +29,7 @@ class program13
             Brr[i] = temp[i];
         }
 
-        for(int i = 0; i < Size; i++)
+        for(int i = 0; i < n; i++)
         {
             System.out.print(Brr[i]+"\t");
         }

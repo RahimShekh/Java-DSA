@@ -13,7 +13,7 @@ class program10
     {
         int Temp = Arr[iSize-1];
 
-        for(int i = iSize-1; i > 0; i--)
+        for(int i = iSize-1; i >= 0; i--)
         {
             Arr[i] = Arr[i-1];
         }

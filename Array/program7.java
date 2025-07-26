@@ -25,13 +25,14 @@ class program7
 
         System.out.print(nums[j]+"\t");
 
-        for(int i = 1; i < nums.length; i++)
+        for(int i = 0; i < nums.length; i++)
         {
             if(nums[i] != val)
             {
-                j++;
+                
                 nums[j] = nums[i];
                 System.out.print(nums[j]+"\t");
+                j++;
             }
         }
     }

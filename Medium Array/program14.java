@@ -39,8 +39,8 @@ class program14
         System.out.print("Enter the No ot roatate:");
         int k = sobj.nextInt();
 
-        LeftRotate(Arr,0,iSize-k-1);
-        LeftRotate(Arr,iSize-k,iSize-1);
+        LeftRotate(Arr,0,k-1);
+        LeftRotate(Arr,k,iSize-1);
         LeftRotate(Arr,0,iSize-1);
 
 
