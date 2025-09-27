@@ -11,38 +11,44 @@ Q. Find the unique element form the given array.
 
 import java.util.*;
 
-class program1{
-
+class program1
+{
     public static void Logic(int Brr[],int n)
     {
-        int iCnt = 0;
+        HashSet<Integer> set = new HashSet<>();
+
         for(int i=0; i<n; i++)
-        {   
-            for(int j=0; j<n; j++)
-            {
-                if(Brr[i] == Brr[j])
-                {
-                    iCnt++;
-                }
-            }
-            if(iCnt == 1)
-            {
-                System.out.println("The unique element:"+Brr[i]);
-                return;
-            }
+        {
+            set.add(Brr[i]);
         }
-        System.out.print("There is no unqiue element");
+
+        System.out.println(set);
+
+        int newArr[] = new int[set.size()];
+
+        int iCnt = 0;
+        for(int it: set)
+        {
+            newArr[iCnt] = it;
+            iCnt++;
+        }
+
+        for(int it: newArr)
+        {
+            System.out.println(it);
+        }
     }
     public static void main(String arg[])
     {
         Scanner sobj = new Scanner(System.in);
 
-        System.out.println("Enter the size:");
+        System.out.println("Enter the Size:");
         int iSize = sobj.nextInt();
 
         int Arr[] = new int[iSize];
 
-        for(int i=0; i<iSize; i++)
+        System.out.println("Enter the No:");
+        for(int i= 0; i<iSize; i++)
         {
             Arr[i] = sobj.nextInt();
         }
