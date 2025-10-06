@@ -2,7 +2,7 @@
 Input Format: N = 5, array[] = {1,2,4,5}
 Result:     3
 Explanation: 
-In the given array, number 3 is missing. So, 3 is the answer.
+In the given array, number 3 is missing. So, 3 is the answer.                        
 
 Input Format:
  N = 3, array[] = {1,3}
@@ -18,8 +18,6 @@ class program22
     public static void MisingNo(int Arr[], int n)
     {
         int hash[] = new int[n+1];
-
-        int index = 0;
 
         for(int i = 0; i < n-1; i++)
         {
