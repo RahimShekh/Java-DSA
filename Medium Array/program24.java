@@ -8,28 +8,28 @@ Input Format: arr[] = {4,1,2,1,2}    Result: 4
 Explanation: In this array, only element 4 appear once and the other elements appear twice. 
 So, 4 is the answer.
  // Brute Force */
+
 import java.util.*;
 
-class program24
+class test
 {
-    public static void AppearOnce(int Brr[],int n)
+    public static void Logic(int Brr[],int n)
     {
-         
-        for(int i = 0; i < n; i++)
+        
+
+        for(int i=0; i<n; i++)
         {
-            int iStart = Brr[i];
-            int iCnt  =  0;
-            for(int j = 0; j < n; j++)
+            int iCnt = 0;
+            for(int j=0; j<n; j++)
             {
-                if(iStart == Brr[j])
+                if(Brr[i] == Brr[j])
                 {
                     iCnt++;
                 }
             }
             if(iCnt == 1)
             {
-                System.out.println("The No Appear Once:"+iStart);
-                
+                System.out.println("The No appears once:"+Brr[i]);
             }
         }
     }
@@ -37,16 +37,16 @@ class program24
     {
         Scanner sobj = new Scanner(System.in);
 
-        System.out.println("Enter the Elements:");
-        int size = sobj.nextInt();
+        System.out.println("Enter the No:");
+        int isize = sobj.nextInt();
 
-        int Arr[] = new int[size];
+        int Arr[] = new int[isize];
 
-        for(int i = 0; i < size; i++)
+        for(int i=0; i<isize; i++)
         {
             Arr[i] = sobj.nextInt();
         }
 
-        AppearOnce(Arr,size);
+        Logic(Arr,isize);
     }
 }
