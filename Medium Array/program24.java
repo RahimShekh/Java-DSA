@@ -11,7 +11,7 @@ So, 4 is the answer.
 
 import java.util.*;
 
-class test
+class program24
 {
     public static void Logic(int Brr[],int n)
     {

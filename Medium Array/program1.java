@@ -15,28 +15,25 @@ class program1
 {
     public static void Logic(int Brr[],int n)
     {
-        HashSet<Integer> set = new HashSet<>();
+        int unique = 0;
 
         for(int i=0; i<n; i++)
-        {
-            set.add(Brr[i]);
+        {   
+            int iCnt =0;
+            for(int j=0; j<n; j++)
+            {
+                if(Brr[i] == Brr[j])
+                {
+                    iCnt++;
+                }
+            }
+            if(iCnt == 1)
+            {
+                unique = Brr[i];    
+            }
         }
 
-        System.out.println(set);
-
-        int newArr[] = new int[set.size()];
-
-        int iCnt = 0;
-        for(int it: set)
-        {
-            newArr[iCnt] = it;
-            iCnt++;
-        }
-
-        for(int it: newArr)
-        {
-            System.out.println(it);
-        }
+        System.out.println("The unique element:"+unique);
     }
     public static void main(String arg[])
     {

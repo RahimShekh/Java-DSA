@@ -1,4 +1,16 @@
+/*
+Example 1:
+Input Format: N = 5, arr[] = {2,6,5,8,11}, target = 14
+Result: YES (for 1st variant)
+       [1, 3] (for 2nd variant)
+Explanation: arr[1] + arr[3] = 14. So, the answer is “YES” for the first variant and [1, 3] for 2nd variant.
 
+Example 2:
+Input Format: N = 5, arr[] = {2,6,5,8,11}, target = 15
+Result: NO (for 1st variant)
+	[-1, -1] (for 2nd variant)
+Explanation: There exist no such two numbers whose sum is equal to the target.
+*/
 //Two sum problem
 //brute force
 
@@ -9,12 +21,13 @@ class program28
     public static int[] TwoSum(int Brr[],int Target)
     {
         int temp[] = new int[2];
-
+        temp[0] = -1,temp[1] = -1;  // rakho agar target nhi mila toh
+         
         for(int i=0; i < Brr.length; i++)
         {
             for(int j= i+1; j < Brr.length; j++)
             {
-                if(Brr[i] == Brr[j]) continue;
+                if(Brr[i] == Brr[j]) continue; // if i and j then skip the iteration
 
                 if(Brr[i] + Brr[j] == Target)
                 {
