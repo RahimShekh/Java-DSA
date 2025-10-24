@@ -9,7 +9,6 @@ Input Format: N = 5, k = 10, array[] = {2,3,5,1,9}
 Result: 3
 Explanation: The longest subarray with sum 10 is {2, 3, 5}. And its length is 3.
 */
-
 //better solution
 
 import java.util.*;

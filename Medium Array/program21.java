@@ -33,7 +33,7 @@ class program21
 
         System.out.print(set);
 
-        int size = set.size(); // if u dont know the size of array u can use
+        int size = set.size(); // if u dont know the size of set u can use
         int index = 0;               // arraylist
         int Union[] = new int[size];
 

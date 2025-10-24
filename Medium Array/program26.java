@@ -19,7 +19,7 @@ class program26
 
        for(int i = 0; i < n; i++)
        {
-            int Value  = map.getOrDefault(Brr[i],0); // agar koi aisi key jjo exist nhi karti toh uski  value 0                                                                                       
+            int Value  = map.getOrDefault(Brr[i],0); // agar koi aisi key jjo exist nhi karti toh uski  value 0
             map.put(Brr[i],Value + 1);                                         // return karga
        }
             for(Map.Entry<Integer,Integer> it : map.entrySet())

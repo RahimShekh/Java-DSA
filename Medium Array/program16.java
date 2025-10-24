@@ -1,4 +1,4 @@
-/*  // brute force
+/* // brute force
 Move all Zeros to the end of the array"
 
 Example 1:
