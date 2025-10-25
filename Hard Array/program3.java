@@ -1,4 +1,4 @@
-/*
+/*  maximum sum
 Example 1:
 Input: arr = [-2,1,-3,4,-1,2,1,-5,4] 
 Output: 6 
@@ -9,7 +9,7 @@ Input: arr = [1]
 Output: 1 
 Explanation: Array has only one element and which is giving positive sum of 1. */
 //optimal solution
-// using kadane algorithm
+// using kadane algorithm tc - O(n)
 
 import java.util.*;
 
