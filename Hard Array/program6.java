@@ -4,7 +4,7 @@ Input:
 arr[] = {1,2,-4,-5}, N = 4
 Output:
 1 -4 2 -5
-Explanation: 
+Explanation:
 Positive elements = 1,2
 Negative elements = -4,-5
 To maintain relative ordering, 1 must occur before 2, and -4 must occur before -5.
