@@ -20,7 +20,7 @@ class program23
         for(int i = 0; i < n; i++)
         {
             if(Arr[i] == 1)
-            {  
+            {
                 iCnt++;
             }
             else

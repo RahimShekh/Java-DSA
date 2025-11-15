@@ -23,7 +23,7 @@ class program31
     {
         ArrayList<Integer> list = new ArrayList<>();
 
-        int max = Brr[n-1];
+        int max = Brr[n-1]; // last element is always a leader
         list.add(Brr[n-1]);
        for(int i=n-2; i>=0; i--)
        {

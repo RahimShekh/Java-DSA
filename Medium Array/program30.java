@@ -10,6 +10,8 @@ Result:
  2
 Explanation: 
 In the given array, number 2 is missing. So, 2 is the answer.
+
+imp : N = 5 hai matlab ek missing hai toh input sirf 4 ka le
 */
 import java.util.*;
 
@@ -37,7 +39,7 @@ class program30
 
         int Arr[] = new int[iSize];
 
-        for(int i=0; i<iSize; i++)
+        for(int i=0; i<iSize-1; i++)
         {
             Arr[i] = sobj.nextInt();
         }
