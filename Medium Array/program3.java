@@ -19,7 +19,6 @@ class program3
             if(Arr[i] > iLarge)
             {
                 iLarge = Arr[i];
-                break;
             }
         }
 
