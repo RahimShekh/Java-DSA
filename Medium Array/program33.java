@@ -26,7 +26,7 @@ class program33
 
         for(int it: set)
         {
-            if(!set.contains(it-1))
+            if(set.contains(it+1))
             {
                 int iCnt = 1;
                 int elem = it;
