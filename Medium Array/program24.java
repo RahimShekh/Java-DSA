@@ -15,8 +15,6 @@ class program24
 {
     public static void Logic(int Brr[],int n)
     {
-        
-
         for(int i=0; i<n; i++)
         {
             int iCnt = 0;

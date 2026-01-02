@@ -29,9 +29,6 @@ class program26
                     System.out.println("The Element:"+it.getKey()); 
                 }
             }
-           
-       
-       
     }
     public static void main(String arg[])
     {
