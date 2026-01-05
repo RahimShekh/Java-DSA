@@ -1,4 +1,4 @@
-/*  Longest subarray with sum k problem
+/* Length of Longest subarray with sum k problem
 Example 1:
 Input Format: N = 3, k = 5, array[] = {2,3,5}
 Result: 2

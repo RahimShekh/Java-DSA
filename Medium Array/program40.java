@@ -21,33 +21,32 @@ Output: [4,5]
 Explanation:
 The numbers 4 and 5 each appear twice in the array.
 */
-
-// we can do it using arryaylist also
 import java.util.*;
 
-class program35
+class program40
 {
     public static void Logic(int Brr[],int n)
     {
         int ans[] = new int[2];
         int val = 0;
-        HashMap<Integer,Integer> mpp = new HashMap<>();
-
         for(int i=0; i<n; i++)
         {
-            int value = mpp.getOrDefault(Brr[i],0);
-            mpp.put(Brr[i],value+1);
-        }
-
-        for(Map.Entry<Integer,Integer> it: mpp.entrySet())
-        {
-            if(it.getValue() == 2)
+            int iCnt = 0;
+            for(int j=i; j<n; j++)
             {
-                ans[val++] = it.getKey();
+                if(Brr[i] == Brr[j])
+                {
+                    iCnt++;
+                }
+            }
+
+            if(iCnt == 2)
+            {
+                ans[val] = Brr[i];
+                val++;
             }
         }
-
-        System.out.println("["+ans[0]+","+ans[1]+"]");
+        System.out.println("The two sneaky numbers:"+ans[0]+" "+ans[1]);
     }
     public static void main(String arg[])
     {
