@@ -15,3 +15,35 @@ Input: num = 0
 Output: 0
  
 */
+
+import java.util.*;
+
+class addDigits
+{
+    public static void Logic(int n)
+    {
+       while(n >= 10)
+       {
+            int sum = 0;
+
+            while(n > 0)
+            {
+                int iDigit = n % 10;
+                sum = sum + iDigit;
+                n = n / 10;
+            }
+            n = sum;      // sum ki value dalo vapas
+       }
+
+       System.out.println("The value:"+n);
+    }
+    public static void main(String arg[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        
+        System.out.println("Enter the number:");
+        int num = sobj.nextInt();
+
+        Logic(num);
+    }
+}

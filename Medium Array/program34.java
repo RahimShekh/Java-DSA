@@ -17,6 +17,7 @@ Input: nums1 = [1], m = 1, nums2 = [], n = 0
 Output: [1]
 Explanation: The arrays we are merging are [1] and [].
 The result of the merge is [1].
+// we can solve it by using arraylist too
 */
 
 import java.util.*;

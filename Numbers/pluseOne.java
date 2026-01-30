@@ -20,3 +20,47 @@ Explanation: The array represents the integer 9.
 Incrementing by one gives 9 + 1 = 10.
 Thus, the result should be [1,0].
 */
+import java.util.*;
+
+class pluseOne
+{
+    public static int[] Logic(int brr[],int n)
+    {
+        for(int i=n-1; i>=0; i--)
+        {
+            if(brr[i] < 9)
+            {
+                brr[i] = brr[i] + 1;
+                return brr;
+            }
+
+            brr[i] = 0;
+        }
+
+        // if arr is [9,9,9] then this edge case
+        int ans[] = new int[n+1];
+        ans[0] = 1;
+
+        return ans;
+    }
+    public static void main(String arg[])
+    {
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter the size:");
+        int size = sobj.nextInt();
+
+        int arr[] = new int[size];
+        for(int i=0; i<size; i++)
+        {
+            arr[i] = sobj.nextInt();
+        }
+
+        arr = Logic(arr,size);
+
+        for(int it : arr)
+        {
+            System.out.print(it+" ");
+        }
+    }
+}
