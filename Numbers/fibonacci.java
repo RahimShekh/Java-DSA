@@ -11,22 +11,20 @@ import java.util.*;
 
 class fibonacci
 {
-    public static void Logic(int No)
+    public static void Logic(int n)
     {
-        int iFirst = 0;
-        int iSecond = 1;
+        int first = 1;
+        int second = 0;
         int next = 0;
 
-        System.out.println(iFirst+"\n"+iSecond);
-        for(int i = 3; i < No; i++)
+        for(int i=0; i<n; i++)
         {
-            next = iFirst + iSecond;
-
-            System.out.println(next);
-
-            iFirst = iSecond;
-            iSecond = next;
-        }
+            System.out.print(next+" ");
+            next = first + second;
+            
+            first = second;
+            second = next;
+        }   
     }
     public static void main(String arg[])
     {
