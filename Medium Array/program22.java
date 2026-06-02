@@ -31,7 +31,7 @@ class program22
             System.out.print(it+"\t");
         }
         int iMiss = 0;
-        for(int i = 1; i < n-1; i++)
+        for(int i = 1; i < n; i++)
         {
             if(hash[i] == 0)
             {
