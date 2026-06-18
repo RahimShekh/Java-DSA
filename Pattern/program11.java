@@ -10,7 +10,7 @@ class program11
 {
     public static void Pattern(int No)
     {
-        int space = 2 *(No-1);
+        int space = 2 *(No-1);   // 2 * (4-1)  = 6   int space = 2*n-2;
         for(int i = 1; i <= No; i++)
         {
             //Number
