@@ -1,6 +1,6 @@
 /*
-you are give a array modify that array if the array have the last digit element 8 then put
--8 if that element is less that 59 then -3 if the element is both then -1.
+you are given a array modify that array if the array have the last digit element 8
+then put -8 if that element is less that 59 then -3 if the element is both then -1.
 
 arr = [23,48,55,98,64]
 
