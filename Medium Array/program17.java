@@ -30,7 +30,7 @@ class program17
             }
             i++;
        }
-       // j zero pe rukega sirf phir swap kardo i ke sath
+       // j zero pe rukega sirf i aage bhagega phir swap kardo i ke sath
     }
     public static void main(String arg[])
     {

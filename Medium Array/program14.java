@@ -39,6 +39,8 @@ class program14
         System.out.print("Enter the No ot roatate:");
         int k = sobj.nextInt();
 
+        k = k % iSize;   // if k is greater than n to normalize array
+
         LeftRotate(Arr,0,k-1);
         LeftRotate(Arr,k,iSize-1);
         LeftRotate(Arr,0,iSize-1);

@@ -39,6 +39,8 @@ class program15
         System.out.print("Enter the No ot roatate:");
         int k = sobj.nextInt();
 
+        k = k % iSize;
+        
         rightRotate(Arr,0,iSize-1);
         rightRotate(Arr,0,k-1);
         rightRotate(Arr,k,iSize-1);
