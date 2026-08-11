@@ -25,7 +25,7 @@ class program15
         {
             for(int j=0; j<m; j++)
             {
-                ans[j][(n-1)-i] = brr[i][j];   // 4-1-0 = 3
+                ans[j][(n-1)-i] = brr[i][j];   // 3-1-0 = 2
             }
         }
         
