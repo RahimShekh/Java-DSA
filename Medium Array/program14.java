@@ -36,7 +36,7 @@ class program14
             Arr[i] = sobj.nextInt();
         }
 
-        System.out.print("Enter the No ot roatate:");
+        System.out.print("Enter the No to roatate:");
         int k = sobj.nextInt();
 
         k = k % iSize;   // if k is greater than n to normalize array

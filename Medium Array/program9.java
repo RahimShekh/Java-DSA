@@ -41,3 +41,49 @@ class program9
         Duplicate(Brr,No);
     }
 }
+
+/*
+import java.util.*;
+
+class test
+{
+    public static void Logic(int brr[], int n)
+    {
+        ArrayList<Integer> list = new ArrayList<>();
+
+        if (n == 0) return;
+
+        list.add(brr[0]); // first element is always unique so far
+
+        for (int i = 1; i < n; i++)
+        {
+            if (brr[i] != brr[i - 1])   // compare with previous, not next
+            {
+                list.add(brr[i]);
+            }
+        }
+
+        for (int it : list)
+        {
+            System.out.print(it + " ");
+        }
+    }
+
+    public static void main(String arg[])
+    {
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter the size:");
+        int size = sobj.nextInt();
+
+        int arr[] = new int[size];
+
+        for (int i = 0; i < size; i++)
+        {
+            arr[i] = sobj.nextInt();
+        }
+
+        Logic(arr, size);
+    }
+}
+*/

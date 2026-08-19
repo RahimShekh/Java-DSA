@@ -22,14 +22,14 @@ class program36
 
         for(int i=0; i<n; i++)
         {
-            if(set.contains(Brr[i]))
+            if(set.contains(Brr[i])) // check if the values in set or not
             {
                 return true;
             }
 
             set.add(Brr[i]);    // add values in set
 
-            if(set.size() > k)
+            if(set.size() > k)   // if size gets biger than k then remove
             {
                 set.remove(Brr[i-k]);    // remove a element 
             }

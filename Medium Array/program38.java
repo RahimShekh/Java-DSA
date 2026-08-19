@@ -74,3 +74,42 @@ class program38
         Logic(arr,size,arr1,size1);
     }
 }
+
+
+/*
+class Solution {
+    public int longestConsecutive(int[] nums) {
+
+        if (nums.length == 0) {
+            return 0;
+        }
+
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int num : nums) {
+            set.add(num);
+        }
+
+        int maxLen = 0;
+
+        for (int it : set) {
+
+            // Start only if this is the first element
+            if (!set.contains(it - 1)) {
+
+                int elem = it;
+                int length = 1;
+
+                while (set.contains(elem + 1)) {
+                    elem++;
+                    length++;
+                }
+
+                maxLen = Math.max(maxLen, length);
+            }
+        }
+
+        return maxLen;
+    }
+}
+*/

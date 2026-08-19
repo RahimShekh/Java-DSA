@@ -45,8 +45,6 @@ class program15
         rightRotate(Arr,0,k-1);
         rightRotate(Arr,k,iSize-1);
        
-
-
         for(int i = 0; i < iSize; i++)
         {
             System.out.print(Arr[i]+"\t");

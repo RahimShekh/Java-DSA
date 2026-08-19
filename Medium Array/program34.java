@@ -27,12 +27,11 @@ class program34
     public static void Logic(int Brr1[],int Brr2[],int m,int n)
     {
 
-        for(int j=0,i=n; i<m; i++)
+         for(int j=0,i = m; j<n; j++)
         {
             Brr1[i] = Brr2[j];
-            j++;
+            i++;
         }
-
         Arrays.sort(Brr1);
         
         for(int it: Brr1)
