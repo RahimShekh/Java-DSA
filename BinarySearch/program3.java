@@ -1,13 +1,61 @@
-/* Sqrt(x)
-Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.
-You must not use any built-in exponent function or operator.
-For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
-Example 1:
-Input: x = 4
-Output: 2
-Explanation: The square root of 4 is 2, so we return 2.
+/* upper bound
+Given a sorted array of N integers and an integer x, write a program to find the
+upper bound of x.
+The upper bound algorithm finds the first or the smallest index in a sorted array where the value at that index is greater than the given key i.e. x.
+The upper bound is the smallest index, ind, where arr[ind] > x.
+xample 1:
+Input Format: N = 4, arr[] = {1,2,2,3}, x = 2
+Result: 3
+Explanation: Index 3 is the smallest index such that arr[3] > x.
 Example 2:
-Input: x = 8
-Output: 2
-Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
+Input Format: N = 6, arr[] = {3,5,8,9,15,19}, x = 9
+Result: 4
+Explanation: Index 4 is the smallest index such that arr[4] > x
 */
+import java.util.*;
+
+class program3
+{
+    public static void BinarySearch(int brr[],int n,int x)
+    {
+        int low = 0;
+        int high = n-1;
+        int ans = n;
+
+        while(low <= high)
+        {
+            int mid = (low+high) / 2;
+
+            if(brr[mid] > x)
+            {
+                ans = mid;
+                high = mid - 1;
+            }
+            else
+            {
+                low = mid + 1;
+            }
+        }
+
+        System.out.println("the smallest index in sorted array:"+ans);
+    }
+    public static void main(String arg[])
+    {
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter the size:");
+        int size = sobj.nextInt();
+
+        int arr[] = new int[size];
+
+        for(int i=0; i<size; i++)
+        {
+            arr[i] = sobj.nextInt();
+        }
+
+        System.out.println("Enter the target:");
+        int k = sobj.nextInt();
+
+        BinarySearch(arr,size,k);
+    }
+}
