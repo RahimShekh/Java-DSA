@@ -18,4 +18,50 @@ Explanation: [23, 2, 6, 4, 7] is an continuous subarray of size 5 whose elements
 Example 3:
 Input: nums = [23,2,6,4,7], k = 13
 Output: false
+//this code takes tc- O(n2) in leetcode it asks O(n);
 */
+import java.util.*;
+
+class program11
+{
+    public static boolean Logic(int brr[],int n,int k)
+    {
+        for(int i=0; i<n; i++)
+        {
+            int sum = 0;
+            for(int j=i; j<n; j++)
+            {
+                sum = sum + brr[j];
+
+                if(j-i+1 >= 2 && sum % k == 0)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    public static void main(String arg[])
+    {
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter the size:");
+        int size = sobj.nextInt();
+
+        int arr[] = new int[size];
+
+        for(int i=0; i<size; i++)
+        {
+            arr[i] = sobj.nextInt();
+        }
+
+        System.out.println("Enter the target:");
+        int target = sobj.nextInt();
+        
+        boolean ans = false;
+
+        ans = Logic(arr,size,target);
+
+        System.out.println(ans);
+    }
+}

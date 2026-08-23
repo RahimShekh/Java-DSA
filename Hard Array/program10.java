@@ -13,3 +13,52 @@ Example 3:
 Input: target = 11, nums = [1,1,1,1,1,1,1,1]
 Output: 0
 */
+
+import java.util.*;
+
+class program10
+{
+    public static void Logic(int brr[],int n,int k)
+    {
+        int minLen = Integer.MAX_VALUE;
+
+        for(int i=0; i<n; i++)
+        {
+            int sum = 0;
+            for(int j=i; j<n; j++)
+            {
+                sum = sum + brr[j];
+
+                if(sum == k)
+                {
+                    minLen = Math.min(minLen,j-i+1);
+                }
+            }  
+        }
+        if(minLen == Integer.MAX_VALUE)  // if we dont found the target
+        {
+            minLen = 0;
+        }
+
+        System.out.println("The minimum length:"+minLen);
+    }
+    public static void main(String arg[])
+    {
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter the size:");
+        int size = sobj.nextInt();
+
+        int arr[] = new int[size];
+
+        for(int i=0; i<size; i++)
+        {
+            arr[i] = sobj.nextInt();
+        }
+
+        System.out.println("Enter the target:");
+        int target = sobj.nextInt();
+
+        Logic(arr,size,target);
+    }
+}

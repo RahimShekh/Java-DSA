@@ -8,7 +8,7 @@ Examples 2:
 Input: arr = [1] 
 Output: 1 
 Explanation: Array has only one element and which is giving positive sum of 1. */
-//better solution
+//better solution  Tc - O(n2)
 
 import java.util.*;
 
