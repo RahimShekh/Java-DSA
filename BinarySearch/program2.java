@@ -28,7 +28,7 @@ class program2
             if(brr[mid] >= x)
             {
                 ans = mid;
-                high = mid - 1;
+                high = mid - 1;  // bcuz we want smallest index
             }
             else
             {

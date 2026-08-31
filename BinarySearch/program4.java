@@ -1,4 +1,4 @@
-/*
+/* Search insert Position
  You are given a sorted array arr of distinct values and a target value x. You need to search for the index of the target value in the array.
  Example 1:
 Input Format: arr[] = {1,2,4,7}, x = 6
