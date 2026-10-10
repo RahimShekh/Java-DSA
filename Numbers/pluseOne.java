@@ -38,7 +38,7 @@ class pluseOne
         }
 
         // if arr is [9,9,9] then this edge case
-        int ans[] = new int[n+1];
+        int ans[] = new int[n+1];  // array will get created here with [0,0,0,0];
         ans[0] = 1;
 
         return ans;

@@ -3,7 +3,7 @@ Remove Duplicate From the Sorted Array   Arr[] = [1,1,2,2,3,3]     Sorted
 
 output:  [1,2,3]
 
-optimal   //we can solve it by arraylist
+optimal   //we can solve it by arraylist but it will take more space
 */
 import java.util.*;
 

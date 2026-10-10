@@ -4,66 +4,57 @@ then put -8 if that element is less that 59 then -3 if the element is both then 
 
 arr = [23,48,55,98,64]
 
-ans = [-3,-8,55,-8,64]
+ans = [-3, -1, -3, -8, 64]
 */
+
 
 import java.util.*;
 
-class test
+class numbers
 {
-    public static void Logic(int brr[],int n)
+    public static void Logic(int brr[], int n)
     {
-        for(int i=0; i<n; i++)
+        for(int i = 0; i < n; i++)
         {
-            int iNo = brr[i];
-            int lessNo = brr[i];
-            int iDigit = 0;
-            
-            if(brr[i] < 59)
+            int lastDigit = brr[i] % 10;
+
+            if(lastDigit == 8 && brr[i] < 59)
+            {
+                brr[i] = -1;
+            }
+            else if(lastDigit == 8)
+            {
+                brr[i] = -8;
+            }
+            else if(brr[i] < 59)
             {
                 brr[i] = -3;
-                System.out.println("it is cool number");
             }
-            while(iNo != 0)
-            {
-               iDigit = iNo % 10;
-
-               if(iDigit == 8)
-               {
-                 brr[i] = -8;
-                 System.out.println("This is warm number");
-                 break;
-               }    
-               iNo = iNo/ 10;
-            }
-
-            if(iDigit == 8 && lessNo < 59)
-            {
-                System.out.println("They are both");
-                brr[i] = -1;
-            } 
         }
     }
+
     public static void main(String arg[])
     {
-        System.out.println("hello world");
         Scanner sobj = new Scanner(System.in);
 
         System.out.println("Enter the size:");
         int size = sobj.nextInt();
-        
+
         int arr[] = new int[size];
 
-        for(int i=0; i<size; i++)
+        System.out.println("Enter the elements:");
+        for(int i = 0; i < size; i++)
         {
             arr[i] = sobj.nextInt();
         }
 
-        Logic(arr,size);
+        Logic(arr, size);
 
-        for(int it: arr)
+        for(int it : arr)
         {
-            System.out.print(it+" ");
+            System.out.print(it + " ");
         }
+
+        sobj.close();
     }
 }

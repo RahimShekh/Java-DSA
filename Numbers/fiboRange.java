@@ -37,3 +37,22 @@ class fiboRange
         Logic(num);
     }
 }
+/*  using next
+public static void Logic(int num)
+    {
+        int first = 0;
+        int second = 1;
+        int next = 0;
+
+        for(int i=0; i<num; i++)
+        {
+           if(next < num)
+           {
+                System.out.println(next);
+                first = second;
+                second = next;
+                next = first + second;
+           }
+        }
+    }
+*/

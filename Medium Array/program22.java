@@ -17,9 +17,9 @@ class program22
 {
     public static void MisingNo(int Arr[], int n)
     {
-        int hash[] = new int[n+1];
+        int hash[] = new int[n+2];
 
-        for(int i = 0; i < n-1; i++)
+        for(int i = 0; i < n; i++)
         {
             int value = Arr[i];  // Get the current value from the array a[]
             hash[value]++;         // increment it if the value appears
