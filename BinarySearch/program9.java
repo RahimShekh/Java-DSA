@@ -8,7 +8,13 @@ Example 2:
 Input Format: arr = [7, 8, 1, 2, 3, 3, 3, 4, 5, 6], k = 10
 Result: False
 Explanation: The element 10 is not present in the array. So, the answer is False.
-*/
+  Why do we need the duplicate condition?
+Consider your example:
+arr = [3, 1, 2, 3, 3, 3, 3], k = 1
+When low = 0, mid = 3, and high = 6, the values are:
+- arr[low] = 3
+- arr[mid] = 3
+- arr[high] = 3   */
 import java.util.*;
 
 class program9

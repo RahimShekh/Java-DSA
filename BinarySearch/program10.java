@@ -22,7 +22,7 @@ class program10
             int mid = (low + high) / 2;
 
             //if the whole array is sorted
-            if(arr[low] <= arr[high])
+            if(brr[low] <= brr[high])
             {
                 iMin = Math.min(iMin,brr[low]);
                 break;
@@ -35,8 +35,8 @@ class program10
             }
             else
             {
-                high = mid - 1;
                 iMin = Math.min(iMin,brr[mid]); 
+                high = mid - 1;
             }
         }
 

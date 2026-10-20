@@ -6,7 +6,8 @@ Explanation: The original array should be [0,1,2,3,4,5,6,7]. So, we can notice t
 Input : arr = [3,4,5,1,2]
 Output : 3
 Explanation: The original array should be [1,2,3,4,5]. So, we can notice that the array has been rotated 3 times.
-*/
+Math.min will not work here bcuz we finding index not value if the index 4 have min value then
+math.min will not store it                        */
 import java.util.*;
 // the smallest value in the array is the count of values index is the ans of rotation
 class program11

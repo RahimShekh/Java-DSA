@@ -32,7 +32,7 @@ class program11
             for(int j=i; j<n; j++)
             {
                 sum = sum + brr[j];
-
+        //we dont have to check sum == k instead we doing sum % k 
                 if(j-i+1 >= 2 && sum % k == 0)
                 {
                     return true;

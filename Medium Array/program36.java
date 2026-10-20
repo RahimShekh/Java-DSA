@@ -58,3 +58,19 @@ class program36
         System.out.println("The ans:"+bflag);
     }
 }
+
+/*              here internallyy happens like this
+
+            if(set.size() > k)   // if size gets biger than k then remove
+            {
+                set.remove(Brr[i-k]);    // remove a element 
+            }
+            set doesnt have indexes
+
+            set.remove(brr[i-k]);
+            set.remove(brr[3])            // brr[3] ki value samjo hai 5
+            set.remove(5)                // set mein se 5 ko hatao
+
+            {1,3,5}
+            after {1,3}
+*/

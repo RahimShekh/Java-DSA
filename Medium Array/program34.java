@@ -7,17 +7,16 @@ The final sorted array should not be returned by the function, but instead be st
 inside the array nums1. To accommodate this, nums1 has a length of m + n, where the
 first m elements denote the elements that should be merged, and the last n elements
 are set to 0 and should be ignored. nums2 has a length of n.
-
 Input: nums1 = [1,2,3,0,0,0], m = 6, nums2 = [2,5,6], n = 3
 Output: [1,2,2,3,5,6]
 Explanation: The arrays we are merging are [1,2,3] and [2,5,6].
 The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
-
 Input: nums1 = [1], m = 1, nums2 = [], n = 0
 Output: [1]
 Explanation: The arrays we are merging are [1] and [].
 The result of the merge is [1].
 // we can solve it by using arraylist too
+m does not determine the array's length. It only tells us how many valid elements are initially in nums1. m length is 6 but the actual element is 3 
 */
 
 import java.util.*;
@@ -27,7 +26,7 @@ class program34
     public static void Logic(int Brr1[],int Brr2[],int m,int n)
     {
 
-         for(int j=0,i = m; j<n; j++)
+         for(int j=0,i = m/2; j<n; j++)
         {
             Brr1[i] = Brr2[j];
             i++;
